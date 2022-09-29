@@ -1,0 +1,2 @@
+JSP: Embeber java en html, es decir, meter código java en html.
+SERVLET: Embeber html en java, es decir, meter código html e n codigo java.
