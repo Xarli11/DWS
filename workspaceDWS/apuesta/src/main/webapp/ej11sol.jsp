@@ -12,7 +12,7 @@
 		<% int dinero=(int)((Math.random()*100+1)); int index=(dinero%3+1); %>
 			<form action="autentifica.jsp" method="POST">
 				<p>El dinero que tienes es <%=dinero %></p>
-				<img src="img/<%=index %>.jpg" alt="Error de la imagen" width="200px">
+				<img src="img/<%=index %>.jpg" width="200px" heigth="200px" alt="Error de la imagen" width="200px">
 				<% if(index==1){ %>
 					<p>Has perdido la mitad del dinero</p>
 					<% } if(index==2){ %>
