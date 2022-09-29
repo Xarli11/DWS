@@ -1,0 +1,12 @@
+# Carpetas
+/*/.settings/
+/*/build/
+/*/src/main/webapp/*INF/
+/.metadata/
+/Servers/
+
+# Archivos
+.classpath
+.project
+/*/.gitignore
+
