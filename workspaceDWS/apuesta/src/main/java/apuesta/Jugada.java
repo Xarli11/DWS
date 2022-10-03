@@ -47,7 +47,12 @@ public class Jugada {
                             apuesta = apuesta * 2;
                         }
                     } else if (index1 != index2 && index2 != index3 && index1 != index3) {
-                        apuesta = apuesta * 1;
+                        if(index1==0 || index2==0 || index3==0) {
+                            apuesta = apuesta * 1;                            
+                        }
+                        else {
+                            apuesta=0;
+                        }
                     }
                 }
             }
