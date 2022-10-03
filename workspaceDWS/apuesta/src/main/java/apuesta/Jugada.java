@@ -16,47 +16,43 @@ public class Jugada {
     }
 
     public void jugar() {
+        dinero -= apuesta;
         if (index1 == index2 && index2 == index3) {
             if (index1 == 0) {
-                dinero = dinero * 10;
-            } else {
-                dinero = dinero * 5;
+                apuesta = apuesta * 10;
+            } else if (index1 != 0) {
+                apuesta = apuesta * 5;
+            } else if (index1 == index2 || index2 == index3 || index1 == index3) {
+                if (index1 == index2) {
+                    if (index1 == 0) {
+                        apuesta = apuesta * 4;
+                    } else if (index3 == 0) {
+                        apuesta = apuesta * 3;
+                    } else if (index3 != 0) {
+                        apuesta = apuesta * 2;
+                    } else if (index2 == index3) {
+                        if (index2 == 0) {
+                            apuesta = apuesta * 4;
+                        } else if (index1 == 0) {
+                            apuesta = apuesta * 3;
+                        } else if (index1 != 0) {
+                            apuesta = apuesta * 2;
+                        }
+                    } else if (index1 == index3) {
+                        if (index1 == 0) {
+                            apuesta = apuesta * 4;
+                        } else if (index2 == 0) {
+                            apuesta = apuesta * 3;
+                        } else if (index2 != 0) {
+                            apuesta = apuesta * 2;
+                        }
+                    } else if (index1 != index2 && index2 != index3 && index1 != index3) {
+                        apuesta = apuesta * 1;
+                    }
+                }
             }
         }
-        if (index1 == index2 || index2 == index3 || index1 == index3) {
-            // Cuando el 1º y 2º son iguales
-            if (index1 == index2) {
-                if (index1 == 0) {
-                    dinero = dinero * 4;
-                } else if (index3 == 0) {
-                    dinero = dinero * 3;
-                } else if (index3 != 0) {
-                    dinero = dinero * 2;
-                }
-            }
-            // Cuando el 2º y 3º son iguales
-            if (index2 == index3) {
-                if (index2 == 0) {
-                    dinero = dinero * 4;
-                } else if (index1 == 0) {
-                    dinero = dinero * 3;
-                } else if (index1 != 0) {
-                    dinero = dinero * 2;
-                }
-            }
-            // Cuando el 1º y 3º son iguales
-            if (index1 == index3) {
-                if (index1 == 0) {
-                    dinero = dinero * 4;
-                } else if (index2 == 0) {
-                    dinero = dinero * 3;
-                } else if (index2 != 0) {
-                    dinero = dinero * 2;
-                }
-            }
-        } else if (index1 != index2 && index2 != index3 && index1 != index3) {
-            dinero = dinero * 1;
-        }
+        dinero += apuesta;
     }
 
     public int getDinero() {
