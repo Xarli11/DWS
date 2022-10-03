@@ -33,7 +33,7 @@
             <img src="img/<%=imagenes.imagenes[index2]%>" width="200px" heigth="200px" alt="Error en la imagen">
             <img src="img/<%=imagenes.imagenes[index3]%>" width="200px" heigth="200px" alt="Error en la imagen">
           </p>
-          <p>Tu dinero se ha quedado en <%=jugada.getDinero()+ jugada.getApuesta() %> euros</p>
+          <p>Tu dinero se ha quedado en <%=jugada.getDinero()%> euros</p>
       </body>
 
       </html>
