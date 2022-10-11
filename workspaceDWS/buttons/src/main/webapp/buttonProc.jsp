@@ -8,8 +8,12 @@
 </head>
 <body>
 <%
+//Obtiene el boton que ha seleccionado
 String bt = request.getParameter("bt");
 %>
+<%-- 
+    Muestra le boton que has seleccionado
+ --%>
 Has pulsado el boton <%=bt%>
 <%%>
 </body>

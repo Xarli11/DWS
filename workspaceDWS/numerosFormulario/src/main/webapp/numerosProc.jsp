@@ -26,6 +26,9 @@ if(nota.length()>0){
     num = Integer.parseInt(nota);
 }
 %>
+<%-- 
+    Te muestra el numero de caracteres
+ --%>
 <p><%=nota %> nº de caracteres <%=nota.length()%></p>
 <% if(num!=-1){ %>
 <p>La nota es: <%=num+17%></p>

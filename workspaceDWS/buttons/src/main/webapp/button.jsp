@@ -8,6 +8,10 @@
 </head>
 <body>
 <form action="buttonProc.jsp" method="post">
+<%-- 
+    Crea una lista de nueve botones y mas tarde despues de procesarlo te dice que boton
+    has pulsado
+ --%>
 <%
 for(int i=1;i<10;i++){
 %>
