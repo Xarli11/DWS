@@ -21,7 +21,6 @@
 			<td><img src="img/<%=2%>.png" width="100px" height="100px"
 				alt="Error de imagen"></td>
 		</tr>
-
 		<%
 		}
 		if (i == 4) {
