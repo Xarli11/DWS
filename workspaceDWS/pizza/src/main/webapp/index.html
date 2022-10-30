@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <h1>CREAR UNA PIZZA</h1>
+    <form action="pizzaProc.jsp" method="post">
+        <label for="namePizza">Nombre de la pizza</label><input type="text" name="namePizza" id="namePizza"><br>
+        <label for="namePizzeria">Pizzeria</label><input type="text" name="namePizzeria" id="namePizzeria"><br>
+        Tamaño <br>
+        <input type="radio" name="size" id="Grande" required><label for="Grande">Grande</label><br>
+        <input type="radio" name="size" id="Mediana"><label for="Mediana">Mediana</label><br>
+        <input type="radio" name="size" id="Pequeña"><label for="Pequeña">Pequeña</label><br><br>
+
+        Ingredientes <br>
+        <input type="checkbox" name="cheese" id="1"><label for="Queso">Queso</label><br>
+        <input type="checkbox" name="tomato" id="2"><label for="Tomate">Tomate</label><br>
+        <input type="checkbox" name="bacon" id="3"><label for="Bacon">Bacon</label><br>
+        <input type="checkbox" name="onion" id="4"><label for="Cebolla">Cebolla</label><br>
+        <input type="checkbox" name="egg" id="5"><label for="Huevo">Huevo</label><br>
+        <input type="checkbox" name="toad" id="6"><label for="Champiñón">Champiñón</label><br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
